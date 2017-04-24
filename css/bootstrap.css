@@ -4514,7 +4514,7 @@ padding-right: 15px;
   }
 }
 .navbar-default {
-background: #5C646B;
+background: #5c646b;
 }
 .navbar-default .navbar-brand {
   color: #fff;
@@ -4525,10 +4525,10 @@ background: #5C646B;
   color: #fff;
 }
 .navbar-default .navbar-text {
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.8);
 }
 .navbar-default .navbar-nav > li > a {
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.8);
   font-weight: normal;   
 }
 
