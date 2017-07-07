@@ -2,4 +2,6 @@
 _site/
 .dropbox
 Icon*
+node_modules/
+img/new_logos_to_fix
 
