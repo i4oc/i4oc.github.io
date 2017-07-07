@@ -1,0 +1,441 @@
+/*
+ * Start Bootstrap - Landing Page (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: "Fira Mono", monospace;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -1px;
+    line-height: 27px;
+    
+}
+
+ul {
+    margin: 20px 0px;
+}
+
+ul.compact {
+	list-style: none;
+	font-weight: normal;
+}
+
+button.primary {
+    background: transparent;
+    border: 1px solid #fff;
+    font-size: 16px;
+    border-radius: 2px;
+    padding: 8px 20px;
+    
+}
+.contentFace, .container p {
+    font-family: 'Muli', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 26px;
+}
+
+.intro-text {
+    margin: 50px 0 100px 0;
+    padding-right: 100px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+span.specialText {
+    font-family: "Fira Mono", monospace;
+    padding: 2px 4px;
+    border-radius: 2px;
+    font-size: 90%;
+    background: #f5f5f5;
+}
+
+.foundingMembers {
+    width: 749px;
+    height: 44px;
+    background-image: url(../img/assets/Foundinggroup.png);
+    background-size: 749px 44px;
+    margin-top: 40px;
+}
+
+.highlighter {
+    background: #FFF;
+    padding: 2px 5px;
+}
+
+.contentWell {
+    padding: 20px;
+    border:1px solid #ddd;
+    margin: 20px 0px;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+    
+}
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.intro-header {
+    padding-bottom: 50px;
+    text-align: left;
+    //background-image: url(../img/assets/intro-background.png);
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    background-position: 900px -100px;
+}
+
+.press-release .intro-header {
+    background-image: none;
+}
+
+.press-release .intro-message h1 {
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 15px;
+    padding-right: 100px;
+}
+
+.press-release ul {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    
+}
+
+.intro-message > h1 {
+    margin: 0;
+    font-size: 26px;
+    font-family: "Fira Mono";
+    letter-spacing: -1px;
+    font-weight: normal;
+}
+
+h1 span.style-italics  {
+    font-family: "Times new roman";
+    font-style: italic;
+    font-size: 30px;
+}
+
+.blink {
+    animation: blinker 1s steps(1,end) 0s infinite;
+}
+
+@-webkit-keyframes blinker {  
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+
+.intro-message > h3 {
+    font-size: 20px;
+    font-family: "Fira Mono";
+    color:#aaa;
+    font-weight: normal;
+}
+
+.body-section > h1 {
+    margin: 0;
+    font-size: 30px;
+    font-family: "Fira Mono";
+    letter-spacing: -1px;
+    
+}
+
+.body-section {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.body-section > h3 {
+    font-size: 20px;
+    font-family: "Fira Mono";
+    color:#aaa;
+    font-weight: normal;
+}
+
+
+.fancy-divider {
+    display: block;
+    width: 37px;
+    height: 8px;
+    background-image: url(../img/assets/divider.png);
+    background-repeat: no-repeat;
+    background-size: 37px 8px;
+    margin-top: 40px;
+}
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.logo {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background-color: #333333;
+    /* background: url(../img/banner-bg.jpg) no-repeat center center; */
+    /* background-size: cover; */
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+.container.stakeholderBrandContainer {
+    margin: 30px 0px;
+}
+
+.row.stakeholderBrand {
+    margin-bottom: 50px;
+}
+
+.row.stakeholderBrand > div a img {
+    width: 100%;
+    height: auto;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.row.stakeholderBrand > div a:hover img {
+    width: 100%;
+    height: auto;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);    
+}
+
+.panel-default.panel-faq {
+    
+    
+    box-shadow: none;
+    
+}
+
+.panel-faq .panel-heading {
+    background: transparent;
+    
+}
+
+.panel-faq .panel-heading h4.panel-title  {
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.panel-default.panel-faq .panel-body {
+    border: none !important;
+    color: #666;
+    font-weight: 300;
+}
+
+.stat-bar {
+    border: 1px solid #000;
+    box-sizing: border-box;
+    margin: 60px 0px;
+    height: 30px;
+}
+
+.stat-bar .stat-section {
+    float: left;
+    height: 100%;
+    position: relative;
+}
+.stat-bar .stat-one {
+    width: 1%;
+    background: #000;
+}
+.stat-bar .stat-one:after {
+    content: "1%";
+    position: absolute;
+    bottom: -30px;
+    left: -10px;
+    font-size: 12px;
+}
+
+.stat-bar .stat-two {
+    width: 45%;
+    background-image: url(../img/assets/dotted.jpg);
+    background-repeat: repeat;
+    background-size: 150px auto;
+}
+
+.stat-bar .stat-two:after {
+    content: "45%";
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    font-size: 12px;
+}
+
+.stat-bar .stat-three {
+    width: 1%;
+    background: #fff;
+}
+
+.stat-bar .stat-three:after {
+    content: "54%";
+    position: absolute;
+    bottom: -30px;
+    left:2000%;
+    font-size: 12px;
+}
+
+.pressLabel {
+    font-size: 11px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    
+    .intro-message > h1 {
+        font-size: 30px;
+        margin-top: 30px;
+        line-height: 40px;
+    }
+    .intro-text {
+        padding-right: inherit;
+        margin-top: 20px;
+    }
+    .row.stakeholderBrand {
+    margin-bottom: 0px;
+    }
+    .stat-bar {
+        height: 80px;
+    }
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+    
+    .row.stakeholderBrand > div {
+        margin-bottom: 30px;
+    }
+    .row.stakeholderBrand > div a img, .row.stakeholderBrand > div a:hover img {
+        height: 40px;
+        width: auto;
+        margin: 0 auto;
+    }
+
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
