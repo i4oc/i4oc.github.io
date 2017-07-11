@@ -345,7 +345,7 @@ h1 span.style-italics  {
     font-size: 12px;
 }
 
-.stat-bar .stat-two {
+.stat-bar .stat-two { 
     width: 45%;
     background-image: url(../img/assets/dotted.jpg);
     background-repeat: repeat;
