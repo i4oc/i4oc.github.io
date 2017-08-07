@@ -92,6 +92,22 @@ span.specialText {
     background-color: #f9f9f9;
     
 }
+
+.contentWell.light {
+    padding: 20px;
+    border:1px solid #ddd;
+    margin: 20px 0px;
+    border-radius: 3px;
+    background-color: inherit;
+}
+
+.contentWell h2 {
+    margin: 10px;
+}
+.contentWell >*:last-child {
+    margin-bottom: 0;
+}
+
 .lead {
     font-size: 18px;
     font-weight: 400;
@@ -117,11 +133,24 @@ span.specialText {
     padding-right: 100px;
 }
 
-.press-release ul {
+.contentList {
     font-size: 14px;
     font-weight: normal;
 }
 
+.contentList li {
+    margin-bottom: 8px;
+}
+
+.contentList li.highlight {
+    background-color: cornsilk;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+
+.contentList p {
+    margin: 0;
+}
 .intro-message {
     position: relative;
     padding-top: 20%;
