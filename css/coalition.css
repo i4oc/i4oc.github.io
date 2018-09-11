@@ -62,7 +62,7 @@ a, code {
     word-wrap: break-word;
 }
 
-
+/* Added for visualising the table correctly */
 #partpublishers {
     font-weight:normal !important;
 }
