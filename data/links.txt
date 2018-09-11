@@ -1,0 +1,167 @@
+Publisher,Address
+AIP Publishing,http://aipp.com
+Aleksandras Stulginskis University,https://asu.lt
+American Accounting Association,http://aaahq.org
+American Association for the Advancement of Science (AAAS),https://www.aaas.org/
+American Cancer Society,http://cancer.org
+American Chemical Society,http://acs.org
+American Dental Society of Anesthesiology,https://www.adsahome.org/
+American Geophysical Union,http://agu.org
+American Institute of Aeronautics and Astronautics,https://www.aiaa.org/
+American Pharmacists Association,http://pharmacist.com
+American Physical Society,https://www.aps.org/
+American Physiological Society,http://the-aps.org
+American Society for Biochemistry and Molecular Biology,http://asbmb.org
+American Society for Cell Biology,http://www.ascb.org/
+American Society for Microbiology,http://asm.org
+American Society for Pharmacology & Experimental Therapeutics,https://www.aspet.org/
+American Society of Neuroradiology,https://www.asnr.org/
+American Society of Parasitologists,https://amsocparasit.org/
+American Thoracic Society,http://thoracic.org
+Antiquity Publications,https://antiquity.ac.uk/
+AOSIS,http://aosisgroup.com
+ASME International,https://www.asme.org/
+Asociacion Espanola de Contabilidad y Administracion de Empresas,http://aeca.es/
+Association for Computing Machinery (ACM),http://acm.org
+Association of Lithuanian Serials,http://serials.lt/news/
+Atlantis Press,https://www.atlantis-press.com/
+Baishideng Publishing Group Inc.,https://www.wjgnet.com/
+Bangladesh Journals Online,https://www.banglajol.info/
+"Biology Centre, AS CR",http://www.bc.cas.cz/en/
+BMJ,http://bmj.com
+Botanic Garden & Botanical Museum Berlin-Dahlem BGBM,http://bgbm.org
+Brighthall,http://brighthall.com/
+Brill Academic Publishers,http://www.brill.com/
+British Institute of Radiology,https://www.bir.org.uk/
+CABI Publishing,https://www.cabi.org/
+Cambridge University Press (CUP),http://cambridge.org
+Canadian Science Publishing,http://cdnsciencepub.com
+Cappelen Damm AS - Cappelen Damm Akademisk,https://www.cappelendammundervisning.no/cdu/akademisk/index.action#filter?
+Cellule MathDoc/CEDRAM,http://www.cedram.org
+Chelonian Conservation and Biology Journal,http://www.chelonianjournals.org
+Co. Ltd. Ukrinformnauka,None
+Cold Spring Harbor Laboratory,http://cshl.edu
+College Publishing,http://www.collegepublishing.us/
+Copernicus GmbH,https://www.copernicus.org/
+Corporacion Universitaria Remington,http://www.uniremington.edu.co/
+Council for British Archaeology,http://new.archaeologyuk.org/
+Croatian Society for Medical Biochemistry and Laboratory Medicine,http://www.biochemia-medica.com/
+Danylo Halytskyi Lviv National Medical University,http://www.lvivmedicaluniversity.com/
+De Gruyter GmbH,https://www.degruyter.com/
+Department of Forest Management,None
+Drustvo psihologov Slovenije/Slovenian Psychologists' Association,http://www.dps.si/
+Edinburgh University Press,http://edinburghuniversitypress.com
+EDP Sciences,http://edpsciences.org
+El Profesional de la Información,https://recyt.fecyt.es/index.php/EPI
+"eLife Sciences Organisation, Ltd.",https://elifesciences.org/
+EMBO,http://embopress.org
+Emerald,http://www.emeraldgrouppublishing.com
+Equinox Publishing,http://equinoxpub.com
+Erudit,https://www.erudit.org
+European Association of Cardiothoracic Surgery (EACTS Publishing Ltd),http://www.eacts.org/
+European Centre for Disease Control and Prevention (ECDC),https://ecdc.europa.eu
+"F1000 Research, Ltd.",https://f1000research.com/
+"Faculty of 1000, Ltd.",http://f1000.com/
+Foundation of Computer Science,http://www.fcsresearch.org/
+Frontiers Media SA,http://www.frontiersin.org/
+Future Medicine Ltd,https://www.futuremedicine.com/
+"Future Science, LTD",https://www.future-science.com/
+Geological Society,https://www.geolsoc.org.uk/
+Global Science Press,http://www.global-sci.org/
+"Goodfellow Publishers, Ltd.",https://www.goodfellowpublishers.com
+Guttmacher Institute,http://guttmacher.org
+Hamad bin Khalifa University Press,http://www.hbkupress.com/
+Health Affairs (Project Hope),https://www.healthaffairs.org/
+Hindawi Limited,https://www.hindawi.com/
+Informa UK Limited,None
+Institute of Aeronautics and Space,None
+Institute of Education Press,None
+Instituto Nacional de Investigacion y Tecnologia Agraria y Alimentaria,http://www.inia.es
+Instituto Nacional de Salud Publica,None
+InTechOpen,http://intechopen.com
+International Association for Food Protection,http://foodprotection.org
+International Phycological Society,http://www.intphycsoc.org/
+International Union of Crystallography (IUCr),https://www.iucr.org/
+IOS Press,http://iospress.nl
+JMIR Publications Inc.,http://jmirpublications.com/
+John Benjamins Publishing Company,https://benjamins.com/
+Journal of Gambling Issues,http://jgi.camh.net/index.php/jgi
+Journal of Tourism and Hospitality Management,http://jthmnet.com/
+JVE International Ltd.,http://www.jvejournals.com
+S. Karger AG,https://www.karger.com/
+Kolej Islam Darul Ridzuan,None
+Leibniz-Institute for Psychology Information (ZPID),https://www.zpid.de/index.php?lang=EN
+Lithuanian Research Centre for Agriculture and Forestry,https://www.lammc.lt
+Lithuanian University of Educational Sciences,https://leu.lt
+Logical Methods in Computer Science e.V.,https://lmcs.episciences.org
+Lviv Polytechnic National University,http://www.lp.edu.ua
+LymphoSign Journal Limited Partnership,None
+Mark Allen Group,http://www.markallengroup.com/
+Mathematical Sciences Publishers,https://msp.org/
+MDPI AG,http://www.mdpi.com/
+Medicinos Mintis,None
+MIT Press - Journals,https://mitpress.mit.edu/
+Mohr Siebeck,http://mohr.de
+Morgan & Claypool Publishers LLC,https://www.morganclaypool.com/
+National Bank of Ukraine,http://bank.gov.ua
+Nepal Journals Online (JOL),https://www.nepjol.info/
+New Prairie Press,http://newprairiepress.org
+Open Book Publishers,http://openbookpublishers.com
+Open Library of the Humanities,https://www.openlibhums.org/
+Open Publishing Association,http://opa.eptcs.org/
+OpenEdition,http://openedition.org
+Oxford Institute for Energy Studies,https://www.oxfordenergy.org/
+Oxford University Press (OUP),http://oup.com
+Peer Community In,https://peercommunityin.org/
+PeerJ,http://peerj.com
+Pensoft Publishers,http://pensoft.net
+Perio J,http://periojackson.com
+Petro Mohyla Black Sea National University,https://chmnu.edu.ua
+Places Journal,http://placesjournal.org
+Polskie Naukowo-Techniczne Towarzystwo Eksploatacyjne,https://pntte.wordpress.com/
+Portland Press Ltd.,http://www.portlandpress.com
+Proceedings of the National Academy of Sciences,http://www.pnas.org/
+Public Library of Science (PLoS),https://www.plos.org/
+Quantum,https://quantum-journal.org/impressum/
+Research-Publishing.net,http://research-publishing.net
+Rockefeller University Press,http://rupress.org
+Royal College of Obstetricians & Gynaecologists (RCOG),http://rcog.org.uk
+Royal Society of Chemistry (RSC),http://rsc.org
+SAGE Publications,http://sagepublications.com
+Samara State Technical University,https://samgtu.com/
+Saratov State University,https://www.sgu.ru
+FapUNIFESP (SciELO),http://www.scielo.org/
+ScienceOpen,http://scienceopen.com
+Scientific Scholar,http://scientificscholar.com
+SciPost,https://scipost.org/
+SciPress Ltd,https://www.scipress.com/
+Scrivener Publishing,http://scrivenerpublishing.com
+Secretariat of The Indonesian Biomedical Journal,http://inabj.org
+Singapore Medical Journal,http://www.smj.org.sg/
+Springer Nature,http://springernature.com
+Taylor & Francis,http://taylorandfrancis.com
+"Technical University of Kosice, Faculty of Metallurgy",http://fmmr.tuke.sk
+Texas Heart Institute Journal,http://www.texasheart.org/Education/THIJournal/
+The American Association of Immunologists,http://aai.org
+The Company of Biologists,http://www.biologists.com/
+The Electrochemical Society,http://www.electrochem.org/
+The Korean Society of Dental Hygience Science,http://www.jksdh.or.kr/
+The Open Journal,https://www.theoj.org/
+The Quantitative Methods for Psychology,http://www.tqmp.org/
+The Royal Society,http://royalsociety.org
+Trans Tech Publications,https://www.scientific.net/
+Tyumen State University,https://www.utmn.ru
+"Ubiquity Press, Ltd.",https://www.ubiquitypress.com/
+Universitas Suryakancana,http://www.unsur.ac.id/
+University of Adelaide Press,https://www.adelaide.edu.au/press/
+UTS ePRESS,http://epress.lib.uts.edu.au/
+Veruscript,http://veruscript.com
+Veterinary World,http://veterinaryworld.org
+Vilnius Gediminas Technical University,http://www.vgtu.lt
+VTeX,http://vtex.lt
+Wageningen Academic Publishers,http://www.wageningenacademic.com/
+Weed Science Society of America,http://wssa.net/
+Western Journal of Emergency Medicine,http://westjem.com
+Wiley-Blackwell,https://www.wiley.com
+World Scientific Pub Co Pte Lt,http://www.worldscientific.com/
+XMLArchive,None

@@ -61,3 +61,7 @@ a, code {
     overflow-wrap: break-word;
     word-wrap: break-word;
 }
+
+#partpublishers {
+    font-weight:normal !important;
+}
