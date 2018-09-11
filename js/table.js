@@ -43,13 +43,14 @@ function create_table(pub_data, rem_data, lnk_data) {
         if (i == 0) {
             table.append("<tr></tr>");
         }
-        i = (i + 1) % 2;
+
         var cur_entry_text = entry["Member Name & ID"];
 
         if ($.inArray(cur_entry_text, remo_array) != 0) {
             var pub_name = cur_entry_text.substring(0, cur_entry_text.indexOf(' (ID'));
 
             if ($.inArray(pub_name, done) != 0) {
+                i = (i + 1) % 2;
                 done.push(pub_name);
 
                 if (pub_name in link_dict) {
