@@ -39,9 +39,11 @@ function create_table(pub_data, rem_data, lnk_data) {
 
     var done = [];
     var i = 0;
+    var new_row = true;
     json_data.forEach(function(entry) {
-        if (i == 0) {
+        if (i == 0 && new_row) {
             table.append("<tr></tr>");
+            new_row = false;
         }
 
         var cur_entry_text = entry["Member Name & ID"];
@@ -51,6 +53,7 @@ function create_table(pub_data, rem_data, lnk_data) {
 
             if ($.inArray(pub_name, done) != 0) {
                 i = (i + 1) % 2;
+                new_row = true;
                 done.push(pub_name);
 
                 if (pub_name in link_dict) {

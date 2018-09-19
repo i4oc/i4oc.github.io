@@ -66,3 +66,13 @@ a, code {
 #partpublishers {
     font-weight:normal !important;
 }
+
+#partpublishers th {
+    text-align: center;
+    border: 0px;
+}
+
+#partpublishers td {
+    border: 0px;
+    vertical-align: middle;
+}
