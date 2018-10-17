@@ -1,3 +1,8 @@
+/*
+ * The data exposed via this script are taken from
+ * https://www.crossref.org/reports/members-with-open-references/.
+ */
+
 function get_csv(pub_path, rem_path, lnk_path) {
     $.ajax({
         url : pub_path,
@@ -27,10 +32,12 @@ function create_table(pub_data, rem_data, lnk_data) {
     var json_link = $.csv.toObjects(lnk_data);
     var json_remo = $.csv.toObjects(rem_data);
 
+    /* Substituted with the link to Crossref Member Participation page
     var link_dict = {};
     json_link.forEach(function(entry) {
         link_dict[entry["Publisher"]] = entry["Address"];
     });
+    */
 
     var remo_array = [];
     json_remo.forEach(function(entry) {
@@ -50,18 +57,25 @@ function create_table(pub_data, rem_data, lnk_data) {
 
         if ($.inArray(cur_entry_text, remo_array) != 0) {
             var pub_name = cur_entry_text.substring(0, cur_entry_text.indexOf(' (ID'));
+            var pub_id = cur_entry_text.substring(
+                cur_entry_text.indexOf(' (ID ') + 5, cur_entry_text.length - 1);
 
             if ($.inArray(pub_name, done) != 0) {
                 i = (i + 1) % 2;
                 new_row = true;
                 done.push(pub_name);
 
+                /*
                 if (pub_name in link_dict) {
                     var cur_link = link_dict[pub_name];
                     if (cur_link != "None") {
                         pub_name = "<a href='" + link_dict[pub_name] + "'>" + pub_name + "</a>";
                     }
                 }
+                */
+
+                pub_name = "<a href='https://www.crossref.org/members/prep/" +
+                    pub_id + "'>" + pub_name + "</a>";
 
                 $("#partpublishers tr:last-child").append("<td>" + pub_name + "</td>");
             }
