@@ -1,6 +1,9 @@
 /*
  * The data exposed via this script are taken from
  * https://www.crossref.org/reports/members-with-open-references/.
+ * It is important to clean the aforementioned CSV with the script
+ * "remove_empty.py so as to include only the publishers that actually
+ * comply with the release of open references."
  */
 
 function get_csv(pub_path, rem_path, lnk_path) {
