@@ -27,12 +27,13 @@ function create_table(pub_data, rem_data) {
 
     var json_data = $.csv.toObjects(pub_data);
     var json_remo = $.csv.toObjects(rem_data);
-    console.log(json_data, json_remo);
 
     var remo_array = [];
     json_remo.forEach(function(entry) {
         remo_array.push(entry["Member Name & ID"]);
     });
+
+    console.log(json_data, json_remo, remo_array);
 
     var done = [];
     var i = 0;
