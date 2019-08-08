@@ -33,8 +33,6 @@ function create_table(pub_data, rem_data) {
         remo_array.push(entry["Member Name & ID"]);
     });
 
-    console.log(json_data, json_remo, remo_array);
-
     var done = [];
     var i = 0;
     var new_row = true;
@@ -48,7 +46,7 @@ function create_table(pub_data, rem_data) {
         var cur_entry_text = entry["Member Name & ID"];
 
         /* The publisher will be considered only if it is not included in the remove list */
-        if ($.inArray(cur_entry_text, remo_array) != 0) {
+        if ($.inArray(cur_entry_text, remo_array) != -1) {
             /* Other constraints to check */
             var ref_visibility = entry["Reference Visibility"]
             var back_doi = parseInt(entry["Total Backfile DOIs"])
