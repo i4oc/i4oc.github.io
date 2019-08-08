@@ -3,6 +3,7 @@
  * https://www.crossref.org/reports/members-with-open-references/.
  * The logic for including/excluding publishers has been directly
  * embedded in this scripts.
+ * Be aware: one has also to check if the 'limited' (if present) and 'closed' amount is below a given threshold
  */
 
 function get_csv(pub_path, rem_path) {
