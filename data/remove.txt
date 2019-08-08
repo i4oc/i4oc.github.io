@@ -1,4 +1,4 @@
-Member Name & ID"
+"Member Name & ID"
 "AOTA Press (ID 2927)"
 "American Chemical Society (ACS) (ID 316)"
 "BioOne (ID 404)"
