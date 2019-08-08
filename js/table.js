@@ -45,8 +45,10 @@ function create_table(pub_data, rem_data) {
         /* The name of the publisher */
         var cur_entry_text = entry["Member Name & ID"];
 
+        console.log(cur_entry_text, $.inArray(cur_entry_text, remo_array));
+
         /* The publisher will be considered only if it is not included in the remove list */
-        if ($.inArray(cur_entry_text, remo_array) != -1) {
+        if ($.inArray(cur_entry_text, remo_array) == -1) {
             /* Other constraints to check */
             var ref_visibility = entry["Reference Visibility"]
             var back_doi = parseInt(entry["Total Backfile DOIs"])
