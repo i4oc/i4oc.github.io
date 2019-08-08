@@ -27,6 +27,7 @@ function create_table(pub_data, rem_data) {
 
     var json_data = $.csv.toObjects(pub_data);
     var json_remo = $.csv.toObjects(rem_data);
+    console.log(json_data, json_remo);
 
     var remo_array = [];
     json_remo.forEach(function(entry) {
