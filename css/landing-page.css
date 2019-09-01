@@ -370,20 +370,20 @@ h1 span.style-italics  {
     content: "1%";
     position: absolute;
     bottom: -30px;
-    left: -10px;
+    left: -5px;
     font-size: 12px;
 }
 .stat-bar .stat-two { 
-    width: 56%;
+    width: 58%;
     background-image: url(../img/assets/dotted.jpg);
     background-repeat: repeat;
     background-size: 150px auto;
 }
 .stat-bar .stat-two:after {
-    content: "56%";
+    content: "58%";
     position: absolute;
     bottom: -30px;
-    left: 54%;
+    left: 45%;
     font-size: 12px;
 }
 
@@ -393,7 +393,7 @@ h1 span.style-italics  {
 }
 
 .stat-bar .stat-three:after {
-    content: "43%";
+    content: "41%";
     position: absolute;
     bottom: -30px;
     left:2000%;
