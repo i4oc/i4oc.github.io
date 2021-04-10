@@ -1,4 +1,4 @@
-"Member Name & ID"
+"American Fisheries Society (ID 460)"
 "AOTA Press (ID 2927)"
 "BioOne (ID 404)"
 "Bristol University Press (ID 165)"
@@ -6,6 +6,7 @@
 "California Digital Library (CDL) (ID 6438)"
 "Department of Communication and Community Development Sciences (ID 9793)"
 "Future Science Ltd (ID 2641)"
+"Galenos Yayinevi (ID 2811)"
 "Informa Healthcare (ID 3197)"
 "Institute of Electrical and Electronics Engineers (IEEE) (ID 263)"
 "Iowa State University (ID 13687)"
