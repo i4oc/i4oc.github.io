@@ -374,13 +374,13 @@ h1 span.style-italics  {
     font-size: 12px;
 }
 .stat-bar .stat-two { 
-    width: 86%;
+    width: 87%;
     background-image: url(../img/assets/dotted.jpg);
     background-repeat: repeat;
     background-size: 150px auto;
 }
 .stat-bar .stat-two:after {
-    content: "86%";
+    content: "87%";
     position: absolute;
     bottom: -30px;
     left: 50%;
