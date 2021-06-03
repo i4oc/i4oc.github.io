@@ -393,7 +393,7 @@ h1 span.style-italics  {
 }
 
 .stat-bar .stat-three:after {
-    content: "13%";
+    content: "12%";
     position: absolute;
     bottom: -30px;
     left:500%;
