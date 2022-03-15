@@ -14,7 +14,7 @@
 # SOFTWARE.
 
 # TODO: remember to remove "remove.txt" and "fine.txt" locally in this directory before starting a new process
-# TODO: remember to download the new Crossref membership CSV document at https://www.crossref.org/reports/members-with-open-references/
+# TODO: remember to download the new Crossref membership CSV document at https://www.crossref.org/reports/members-with-open-references/ and to copy it into the directory data as "crossref.txt" (remember to move the previous version of "crossref.txt" into another file first)
 
 from requests import get
 from requests.exceptions import ReadTimeout
