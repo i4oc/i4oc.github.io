@@ -25,7 +25,7 @@ from json import loads
 from os.path import exists
 
 api_call = "https://api.crossref.org/members/%s/works?filter=has-references:true,reference-visibility:%s"
-HTTP_HEADERS = {"User-Agent": "check_limited.py / I4OC (mailto:essepuntato@opencitations.net)"}
+HTTP_HEADERS = {"User-Agent": "check_limited.py / I4OC (mailto:tech@opencitations.net)"}
 
 
 def take_num(pub_id, ref_type):
