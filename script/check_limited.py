@@ -25,7 +25,8 @@ from json import loads
 from os.path import exists
 
 api_call = "https://api.crossref.org/members/%s/works?filter=has-references:true,reference-visibility:%s"
-HTTP_HEADERS = {"User-Agent": "check_limited.py / I4OC (mailto:tech@opencitations.net)"}
+HTTP_HEADERS = {
+    "User-Agent": "check_limited.py / I4OC (mailto:tech@opencitations.net)"}
 
 
 def take_num(pub_id, ref_type):
@@ -34,13 +35,15 @@ def take_num(pub_id, ref_type):
     while tent < 10:
         tent += 1
         try:
-            ref = get(api_call % (pub_id, ref_type), headers=HTTP_HEADERS, timeout=30)
+            ref = get(api_call % (pub_id, ref_type),
+                      headers=HTTP_HEADERS, timeout=30)
             j = loads(ref.text)
             return int(j["message"]["total-results"])
         except ReadTimeout:
             pass  # retry
 
     raise Exception("Reading online failed.")
+
 
 not_fine = []
 fine = []
@@ -76,7 +79,8 @@ with open(".." + sep + "data" + sep + "crossref.txt") as f:
                 not_fine.append(name_id)
                 with open("remove.txt", "a") as g:
                     g.write('"' + name_id + '"\n')
-                print(name_id, "has not < 20% of articles with references in the limited/closed datasets!")
+                print(
+                    name_id, "has not < 20% of articles with references in the limited/closed datasets!")
 
 print("\n\nPublishers that are not passing the threshold:")
 for nf in sorted(not_fine):

@@ -36,14 +36,24 @@ function create_table(pub_data, rem_data) {
     var done = [];
     var i = 0;
     var new_row = true;
+
+    // Group the list of publishers under their corresponding alphabetic letter
+    // The first group is the one having non alphabetic letter as first letter, i.e., "#"
+    var new_group = false;
+    var group = "#"
+    //add this <tr> if you want to toggle the corresponding list of each group
+    //table.append("<tr id="+group.toLowerCase()+" class='group-top'><td><button onclick=on_header_click('"+group.toLowerCase()+"') class='group-top'>Group "+group+"</button></td></tr>");
+    table.append("<tr id=groupheader_"+group.toLowerCase()+" class='group-top'><td><strong>"+group+"</strong></td></tr>");
+
     json_data.forEach(function(entry) {
-        if (i == 0 && new_row) {
-            table.append("<tr></tr>");
-            new_row = false;
-        }
 
         /* The name of the publisher */
         var cur_entry_text = entry["Member Name & ID"];
+
+        if (i == 0 && new_row) {
+            table.append("<tr id=groupmember_"+group.toLowerCase()+" class='group-tr'></tr>");
+            new_row = false;
+        }
 
         console.log(cur_entry_text, $.inArray(cur_entry_text, remo_array));
 
@@ -66,6 +76,30 @@ function create_table(pub_data, rem_data) {
                 if ($.inArray(pub_name, done) == -1) {
                     i = (i + 1) % 2;
                     new_row = true;
+
+                    /*check first letter: to group publishers together*/
+                    /*in case not alphabetic it goes under "#"*/
+                    var first_char = cur_entry_text.substring(0, cur_entry_text.indexOf(' (ID'))[0]
+                    console.log(first_char);
+                    console.log((/[a-zA-Z]/).test(first_char));
+                    if ((/[a-zA-Z]/).test(first_char)) {
+                      new_group = group != first_char.toUpperCase();
+                      group = first_char.toUpperCase();
+                    }else{
+                      new_group = group != "#";
+                      group = "#";
+                    }
+
+                    if (new_group) {
+                      //add this <tr> if you want to toggle the corresponding list of each group
+                      //table.append("<tr id="+group.toLowerCase()+" class='group-top'><td><button onclick=on_header_click('"+group.toLowerCase()+"') class='group-top'><strong>"+group+"</strong></button></td></tr>");
+                      table.append("<tr id=groupheader_"+group.toLowerCase()+" class='group-top'><td><strong>"+group+"</strong></td></tr>");
+                      table.append("<tr id=groupmember_"+group.toLowerCase()+" class='group-tr'></tr>");
+                      new_group = false;
+                      new_row = false;
+                      i = 1;
+                    }
+
                     done.push(pub_name);
                     pub_name = "<a href='https://www.crossref.org/members/prep/" +
                         pub_id + "'>" + pub_name + "</a>";
@@ -77,9 +111,22 @@ function create_table(pub_data, rem_data) {
     });
 }
 
+
 var data_dir = "data/";
+// use this instead for local tests
+//var data_dir = "https://i4oc.org/data/"
+
 var pub_file = data_dir + "crossref.txt";
 var rem_file = data_dir + "remove.txt";
 
 var table = $("#partpublishers");
 get_csv(pub_file, rem_file);
+
+//Set events
+function on_header_click(group) {
+  $( "tr.group-tr" ).each(function() {
+    if ($( this ).attr('id') == group){
+      $( this ).toggle();
+    }
+  });
+};
