@@ -114,7 +114,7 @@ function create_table(pub_data, rem_data) {
 
 var data_dir = "data/";
 // use this instead for local tests
-//var data_dir = "https://i4oc.org/data/"
+// data_dir = "https://i4oc.org/data/"
 
 var pub_file = data_dir + "crossref.txt";
 var rem_file = data_dir + "remove.txt";
