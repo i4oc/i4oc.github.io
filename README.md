@@ -4,11 +4,11 @@ This GitHub repository contains all the material used for the website of the Ini
 
 ## How to be involved
 
-A publisher, that is a participant in the Crossref Cited-by service, will be listed in those participating to I4OC if it is compliant with all the following points:
+Starting from 3rd June 2022 all the members of Crossref cannot limit the distribution of their references. All the members that previously had limited or closed references have now been set to open. This means that all the currently deposited references in Crossref are now treated as open metadata.  
 
-1. Be listed at https://www.crossref.org/reports/members-with-open-references/, which means the publisher is releasing all or part of its citations as open material via Crossref;
-2. The percentage of articles with references deposited in Crossref included in the limited and closed datasets must be lesser than the 20% of the total amount of articles with references deposited;
-3. It is depositing 'current references' (see the table at point 1, column 5 greater than 0 and column 7 set to "true") or it is willing to deposite 'current references' (column 7 set to "true") and it is depositing 'backfile references' (column 4 greater than 0 and column 6 set to "true").
+A publisher, that is a participant in the Crossref Cited-by service, will be listed in those participating to I4OC if it has at least one deposited article with references.  
+
+You can read the dedicated blog post explaining the new membership terms of Crossref at https://www.crossref.org/blog/amendments-to-membership-terms-to-open-reference-distribution-and-include-uk-jurisdiction/
 
 ## License
 

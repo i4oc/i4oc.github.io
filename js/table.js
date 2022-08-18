@@ -55,7 +55,7 @@ function create_table(pub_data, rem_data) {
             new_row = false;
         }
 
-        console.log(cur_entry_text, $.inArray(cur_entry_text, remo_array));
+        //console.log(cur_entry_text, $.inArray(cur_entry_text, remo_array));
 
         /* The publisher will be considered only if it is not included in the remove list */
         if ($.inArray(cur_entry_text, remo_array) == -1) {
@@ -80,8 +80,8 @@ function create_table(pub_data, rem_data) {
                     /*check first letter: to group publishers together*/
                     /*in case not alphabetic it goes under "#"*/
                     var first_char = cur_entry_text.substring(0, cur_entry_text.indexOf(' (ID'))[0]
-                    console.log(first_char);
-                    console.log((/[a-zA-Z]/).test(first_char));
+                    //console.log(first_char);
+                    //console.log((/[a-zA-Z]/).test(first_char));
                     if ((/[a-zA-Z]/).test(first_char)) {
                       new_group = group != first_char.toUpperCase();
                       group = first_char.toUpperCase();

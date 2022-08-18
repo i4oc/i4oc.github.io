@@ -399,13 +399,13 @@ h1 span.style-italics  {
     font-size: 12px;
 }
 .stat-bar .stat-two {
-    width: 88%;
+    width: 99%;
     background-image: url(../img/assets/dotted.jpg);
     background-repeat: repeat;
     background-size: 150px auto;
 }
 .stat-bar .stat-two:after {
-    content: "88%";
+    content: "99%";
     position: absolute;
     bottom: -30px;
     left: 50%;
@@ -415,14 +415,16 @@ h1 span.style-italics  {
 .stat-bar .stat-three {
     width: 1%;
     background: #fff;
+    display: none;
 }
 
 .stat-bar .stat-three:after {
-    content: "11%";
+    content: "1%";
     position: absolute;
     bottom: -30px;
-    left:500%;
+    left:0%;
     font-size: 12px;
+    display: none;
 }
 
 .pressLabel {
