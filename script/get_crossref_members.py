@@ -15,54 +15,110 @@
 
 from requests import get
 from json import loads
+from csv import DictReader
+from os import remove
+
+
+def normalized_crossref_list(tmp_file, header):
+    dict_publishers = {}
+    final_file = tmp_file[1:]
+
+    with open(tmp_file) as f:
+        reader = DictReader(f)
+        for row in reader:
+            dict_publishers[row["Member Name & ID"].lower()] = row
+
+    with open(final_file, "w") as g:
+        g.write('"'+'","'.join(header)+'"\n')
+
+    with open(final_file, "a") as g:
+        for i in sorted(dict_publishers.keys()):
+            str_vals = ['"' + val + '"' for val in dict_publishers[i].values()]
+            g.write(",".join(str_vals)+"\n")
+
+    remove(tmp_file)
 
 
 HTTP_HEADERS = {"User-Agent": "I4OC (mailto:tech@opencitations.net)"}
 
 rows = 1000
-for visibility in ["closed", "limited", "open"]:
-    members = set()
-    items_with_no_mem = set()
-    items = [i for i in range(0, rows)]
-    next_cursor = "*"
+header = [
+    "Member Name & ID",
+    #"Sponsored member & prefix",
+    "Count Backfile DOIs",
+    "Count Current DOIs",
+    "Deposits Backfile References",
+    "Deposits Current References",
+    "Count Current Journal",
+    "Count Backfile Journal",
+    "Coverage Current Journal",
+    "Coverage Backfile Journal"]
 
-    with open("members_"+visibility+".txt", "w") as g:
-        g.write('"Member Name & ID","Sponsored member & prefix","Reference Visibility","Total Backfile DOIs","Total Current DOIs","Deposits Backfile References","Deposits Current References"\n')
 
-    while len(items) == rows:
-        api_call = "https://api.crossref.org/v1.0/members?filter=reference-visibility:" + \
-            str(visibility)+"&rows="+str(rows)+"&cursor="+next_cursor
+items = [i for i in range(0, rows)]
+next_cursor = "*"
+tmp_file = ".members.txt"
 
-        print("calling: ", api_call)
-        ref = get(api_call, headers=HTTP_HEADERS, timeout=30)
+with open(tmp_file, "w") as g:
+    g.write('"'+'","'.join(header)+'"\n')
 
-        if next_cursor == "*":
-            print("Total number of members to elaborate with reference-visibility= ",
-                  visibility, " is: ", str(loads(ref.text)["message"]["total-results"]))
+while len(items) == rows:
+    members = []
+    api_call = "https://api.crossref.org/v1.0/members?rows=" + \
+        str(rows)+"&cursor="+next_cursor
 
-        items = loads(ref.text)["message"]["items"]
-        for item in items:
-            for pref in item["prefix"]:
-                # e.g. "American Physical Society (APS) (ID 16)","American Physical Society10.1103","open","661523","50657","true","true"
-                members.append({
-                    "Member Name & ID": item["primary-name"] + " (ID "+str(item["id"])+")",
-                    "Sponsored member & prefix": item["primary-name"] + pref["value"],
-                    "Reference Visibility": pref["reference-visibility"],
-                    "Total Backfile DOIs": str(item["counts"]["backfile-dois"]),
-                    "Total Current DOIs": str(item["counts"]["current-dois"]),
-                    "Deposits Backfile References": str(item["flags"]["deposits-references-backfile"]).lower(),
-                    "Deposits Current References": str(item["flags"]["deposits-references-current"]).lower()
-                })
+    print("calling: ", api_call)
+    ref = get(api_call, headers=HTTP_HEADERS, timeout=30)
 
-            with open("members_"+visibility+".txt", "a") as g:
-                #sort and remove duplicates
-                dict_members = dict()
-                for m in members:
-                    dict_members[m["Member Name & ID"].lower()] = m
+    if next_cursor == "*":
+        print("Total number of members to elaborate with open references (mandatory in Crossref June 2022) is: ",
+              str(loads(ref.text)["message"]["total-results"]))
 
-                for i in sorted(dict_members.keys()):
-                    str_vals = ['"' + val
-                                + '"' for val in dict_members[i].values()]
-                    g.write(",".join(str_vals)+"\n")
+    items = loads(ref.text)["message"]["items"]
+    for item in items:
+        member_meta = {
+                "Member Name & ID": item["primary-name"] + " (ID "+str(item["id"])+")",
+                #"Sponsored member & prefix": item["primary-name"] + pref["value"],
 
-        next_cursor = loads(ref.text)["message"]["next-cursor"]
+                "Count Backfile DOIs": str(item["counts"]["backfile-dois"]),
+                "Count Current DOIs": str(item["counts"]["current-dois"]),
+                "Deposits Backfile References": str(item["flags"]["deposits-references-backfile"]).lower(),
+                "Deposits Current References": str(item["flags"]["deposits-references-current"]).lower()
+        }
+
+        try:
+            member_meta["Count Current Journal"] = str(
+                item["counts-type"]["current"]["journal-article"])
+        except:
+            member_meta["Count Current Journal"] = "0"
+
+        try:
+            member_meta["Count Backfile Journal"] = str(
+                item["counts-type"]["backfile"]["journal-article"])
+        except:
+            member_meta["Count Backfile Journal"] = "0"
+
+        try:
+            member_meta["Coverage Current Journal"] = str(
+                item["coverage-type"]["current"]["journal-article"]["references"])
+        except:
+            member_meta["Coverage Current Journal"] = "0.0"
+
+        try:
+            member_meta["Coverage Backfile Journal"] = str(
+                item["coverage-type"]["backfile"]["journal-article"]["references"])
+        except:
+            member_meta["Coverage Backfile Journal"] = "0.0"
+
+        members.append(member_meta)
+
+    with open(tmp_file, "a") as g:
+        for m in members:
+            l_str = []
+            for h in header:
+                l_str.append(m[h])
+            g.write('"'+'","'.join(l_str)+'"\n')
+
+    next_cursor = loads(ref.text)["message"]["next-cursor"]
+
+normalized_crossref_list(tmp_file, header)

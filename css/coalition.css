@@ -64,6 +64,7 @@ a, code {
 
 /* Added for visualising the table correctly */
 #partpublishers {
+    table-layout: auto !important;
     font-weight:normal !important;
 }
 
@@ -75,4 +76,22 @@ a, code {
 #partpublishers td {
     border: 0px;
     vertical-align: middle;
+}
+
+td.main-cell{
+  width: 65%;
+}
+td.main-cell-format{
+  width: 50%;
+}
+
+#def_publishlist{
+  tab-size: 2;
+}
+
+p.indent{
+  padding-left: 35pt;
+}
+p.indent-indent{
+  padding-left: 70pt;
 }
